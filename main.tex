@@ -1,67 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{deedy-resume-openfont}
-
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \namesection{Emanuel}{Joívo}{ \href{mailto:emanueljoivo@gmail.com}{emanueljoivo@gmail.com} 
 }
@@ -147,47 +88,37 @@ LinkedIn://  \href{https://www.linkedin.com/in/emanueljoivo}{\custombold{emanuel
 \runsubsection{\href{http://www.fogbow.cloud/}{Fogbow}}
 \descript{| DevOps Enginner }
 
-\location{December 2018 - Now | Campina Grande, PB}
+\location{May 2019 - Now | Campina Grande, PB}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Fogbow is a Middleware that is an easy, flexible and highly customizable federation of Infrastructure-as-a-Service cloud providers. I contribute to the development of a monitoring solution to the components of the Fogbow. Also contributing to the automation of the update of the components on every site as improving the Continous Integration and Deployment flow.
+\item Fogbow is a multi-cloud middleware that offers an easy, flexible and highly customizable federation of IaaS cloud providers. 
+\item Developed a monitoring solution for Fogbow components. Also contributed to the automation of components upgrades across Fogbow sites, improving the flow of Continuous Integration and Deployment.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{http://cloudlab-brasil.rnp.br/iguassu}{Cloud Lab BR - Iguassu}}
-\descript{| DevOps Intern \& Project Leader}
+\runsubsection{\href{http://cloudlab-brasil.rnp.br/iguassu}{Iguassu}}
+\descript{| DevOps Enginner }
 
 \location{December 2018 - Now | Campina Grande, PB}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item I contribute to the development of components to compilation, translation, scheduling and performing computational tasks described in a domain-specific language (i.e. \href{http://ourgrid.lsd.ufcg.edu.br/use.php#site1}{Jobs Description Language - JDF}) that make up the Iguassu service.
-\item \href{https://github.com/ufcg-lsd/iguassu}{Iguassu} is a service for monitoring and performing e-science tasks in high-throughput computing in a multi-cloud environment. The resources used to perform these tasks are part of a cloud federation, managed by Fogbow middleware (fogbowcloud.org). Iguassu allows its users to use cloud resources without worrying about infrastructure details.  
-\item I contribute both in project management aspects and in the development/implementation of the microservices that compound the developed system.
+\item \href{https://github.com/ufcg-lsd/iguassu}{Iguassu} is a service for monitoring and performing e-science tasks in high-throughput computing in a multi-cloud environment. The resources used to perform these tasks are part of a cloud federation, managed by Fogbow middleware (fogbowcloud.org). Iguassu allows its users to use cloud resources without worrying about infrastructure details.
+\item Developed the services that compound the Iguassu ecosystem, therefore components to the compilation, translation, scheduling and performing computational tasks described in a domain-specific language(i.e. \href{http://ourgrid.lsd.ufcg.edu.br/use.php#site1}{Jobs Description Language - JDF}) that make up the application.
+\item I also wrote the automation of the deployment tasks, implementing mechanisms of CI/CD using tools like Ansible and simple orchestrators like Docker in swarm mode.
 \end{tightemize}
 \sectionsep
 
+\section{Hobby projects}
 \runsubsection{\href{https://github.com/OpenEnade}{OpenEnade}}
-\descript{| FullStack Developer \& Project Leader}
+\descript{| Frontend Developer}
 
 \location{August 2018 - November 2018 | Campina Grande, PB}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item I participated in this project as the leader of a team of Frontend developers.
-\item I participated in the development of a web user interface for visualize the Enade data. 
-\item The main focus of this project is the design and development of a web system that publicly exposes the data about Enade.
+\item Coordinated the team of Frontend developers.
+\item I built a web user interface for visualization of the Enade data.
+\item The main focus of this project is the design and development of a web system that publicly exposes the data about Enade over the years aim to compare courses in a simple and measured way.
 \end{tightemize}
-\sectionsep
-
-\runsubsection{{FINDATRAMPO}}
-\descript{| MOBILE DEVELOPER | VOLUNTEER}
-
-\location{March 2017 - May 2017 | Campina Grande, PB}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Participated in the HACKATRUCK project, in the development of a
-mobile-focused application in IOS, a project executed by IBM, at the UFCG.
-\end{tightemize}
-\sectionsep
 \sectionsep
 
 \section{Workshops}
@@ -197,7 +128,7 @@ mobile-focused application in IOS, a project executed by IBM, at the UFCG.
 \location{6, 7 May 2019 | Gramado, RS}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Participated as an exhibitor of a tool of high-throughput computing in a multi-cloud environment called Iguassu, representing the Distributed Systems Laboratory of the Federal University of Campina Grande at the RNP Workshop that composed the 37th Brazilian Symposium on Computer Networks and Distributed Systems (SBRC).
+\item Participated as an exhibitor of the Iguassu, representing the Distributed Systems Laboratory of the Federal University of Campina Grande at the RNP Workshop that composed the 37th Brazilian Symposium on Computer Networks and Distributed Systems (SBRC).
 \end{tightemize}
 \sectionsep
 
